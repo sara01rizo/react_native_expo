@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
 import palmtree from "./assets/palm-tree.jpg";
 
 const App = () => {
@@ -9,6 +9,11 @@ const App = () => {
       <Image 
         source={palmtree}
         style={styles.image}
+      />
+      <Button 
+        color="#000"
+        title='Jump in'
+        onPress={() => console.log('Hello World')}
       />
       <StatusBar style="auto" />
     </View>
